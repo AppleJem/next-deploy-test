@@ -24,10 +24,6 @@ const DUMMY_CATS = [
 ]
 
 export default function Home(props) {
-  // const [loadedCats, setLoadedCats] = useState([]);
-  // useEffect(() => {
-  //   setLoadedCats(DUMMY_CATS);
-  // }, [])
 
   return (<>
     <Head>

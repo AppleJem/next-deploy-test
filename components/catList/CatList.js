@@ -5,7 +5,7 @@ import CatCard from './CatCard';
 function CatList(props) {
     return <div className={styles['cat-list-container']}>
         {props.catsArr.map((cat) => {
-            return <CatCard catInfo={cat} />
+            return <CatCard key={cat.id} catInfo={cat} />
         })}
     </div>
 }

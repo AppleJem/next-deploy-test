@@ -2,11 +2,13 @@ import { useRouter } from "next/router";
 
 function CatDetails(props) {
     const router = useRouter();
+    console.log(props.catData);
     return <>
-        <h1>This cat's name is {props.catData.name}</h1>
-        <p>{props.catData.id}</p>
-        <img src={props.catData.image} alt="Cat image" />
-        <p>{props.catData.description}</p>
+    <p>This is an individual cat page</p>
+        {/* <h1>This cat's name is {props.catData.name}</h1> */}
+        {/* <p>{props.catData}</p> */}
+        {/* <img src={props.catData.image} alt="Cat image" /> */}
+        {/* <p>{props.catData.description}</p> */}
     </>
 }
 
@@ -21,7 +23,7 @@ export async function getStaticPaths() {
                 }
             },
             {
-                params: {
+                params: {   
                     catId: 'k1',
                 },
             }
